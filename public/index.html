@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text to Image</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="js/main.js"></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="relative pb-24 bg-body overflow-hidden">
+        
+        <div class="absolute top-0 right-0 w-160 h-160 bg-gradient-to-t from-violet-900 to-darkBlue-900 rounded-full filter blur-4xl"></div>
+        <img class="absolute top-0 right-0" src="casper-assets/headers/circle-double-element-dark.svg" alt="">
+        <div class="relative pt-36">
+          <div class="relative z-10 container mx-auto px-4">
+            <div class="relative z-10 max-w-3xl mx-auto text-center">
+              <h1 class="font-heading text-5xl sm:text-6xl md:text-7xl xl:text-8xl text-white font-semibold leading-none mb-8">INTRODUCING Generative AI</h1>
+              <p class="text-2xl text-gray-400 mb-8">Generate any picture using AI by giving prompt to it.</p>
+              
+            </div>
+            <div class="flex flex-wrap items-start justify-between mt-24">
+              <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+                
+                
+              </div>
+              <div class="w-full lg:w-auto">
+                
+                
+              </div>
+            </div>
+            <img class="absolute top-0 right-0 -mt-32 md:-mt-20 lg:mr-20 animate-spinStar" src="casper-assets/headers/blink.png" alt="">
+            <img class="absolute top-0 left-0 -mt-20 md:-ml-10 h-20 animate-spinStar" src="casper-assets/headers/blink-sm.png" alt="">
+            <img class="hidden md:block absolute bottom-0 right-0 -mr-24 lg:-mr-0 mb-20 lg:mb-36" src="casper-assets/headers/plant-robot-left.png" alt="">
+            <img class="hidden lg:block absolute top-0 left-0" src="casper-assets/headers/chip-skew.png" alt="">
+          </div>
+        </div>
+        <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-md z-50">
+          <div class="navbar-backdrop fixed inset-0 bg-violet-900 opacity-20"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex mb-auto items-center">
+              <a class="inline-block mr-auto" href="#">
+                <img class="h-10" src="casper-assets/logos/casper-logo.svg" alt="">
+              </a>
+              <a class="navbar-close" href="#">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="py-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-base text-black font-medium uppercase" href="#">FEATURED</a></li>
+                <li class="mb-6"><a class="inline-block text-base text-black font-medium uppercase" href="#">SOLUTIONS</a></li>
+                <li class="mb-6"><a class="inline-block text-base text-black font-medium uppercase" href="#">PRODUCTS</a></li>
+                <li><a class="inline-block text-base text-black font-medium uppercase" href="#">ARTICLES</a></li>
+              </ul>
+            </div>
+            <div>
+      <a class="flex py-2 px-4 mb-4 items-center justify-center text-sm font-medium uppercase text-violet-900 hover:text-violet-500" href="#">SIGN IN</a><a class="flex h-11 py-2 px-4 items-center justify-center text-sm font-medium uppercase text-black hover:text-white bg-violet-500 hover:bg-violet-600 transition duration-200 rounded-full" href="#">SIGN UP</a>
+      </div>
+          </nav>
+        </div>
+      </section>
+                
+      <section class="relative py-12 sm:py-24 lg:py-32 bg-body overflow-hidden">
+        <img class="absolute top-0 right-0 py-16" src="casper-assets/sign-in/double-lines-circle.svg" alt="">
+        <img class="hidden sm:block absolute top-0 right-0 md:mt-12 mr-4 md:mr-24 lg:mr-52 animate-spinStar z-10" src="casper-assets/sign-in/blink.png" alt="">
+        <div class="relative container mx-auto px-4">
+          <div class="flex flex-wrap items-end -mx-4">
+            <div class="relative w-full lg:w-1/2 px-4 mb-20 lg:mb-0">
+              <div class="absolute top-0 left-0 w-128 h-128 -mt-52 -ml-32 bg-gradient-to-t from-purple-700 to-darkBlue-900 rounded-full filter blur-4xl"></div>
+              <div class="relative max-w-xl">
+                <div class="max-w-md">
+                  <form onsubmit="generateImage(); return false;">
+                    <div>
+                      <h2 class="font-heading text-5xl sm:text-6xl md:text-7xl font-medium text-white tracking-tight mb-6">Generate pic</h2>
+                      <span class="block mb-2 text-sm font-medium text-white leading-snug">Enter your prompt</span>
+                      <div class="flex py-2 px-3 h-11 mb-5 bg-gray-800 border border-gray-700 rounded-lg">
+                        <input class="w-full bg-transparent text-sm placeholder-gray-500 text-white border-none outline-none" type="text" placeholder="Enter Prompt" id="textInput">
+                        <button class="text-gray-600 hover:text-gray-200" type="submit">
+                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="mb-4">
+                      </div>
+                      <div>
+                        <button class="flex w-full h-14 py-2 px-4 mb-5 items-center justify-center text-base font-medium uppercase text-black hover:text-white bg-violet-500 hover:bg-violet-600 transition duration-200 rounded-full" type="submit">
+                          <span class="mr-2">Generate</span>
+                          <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.4199 6.62C18.3185 6.37565 18.1243 6.18147 17.8799 6.08C17.7597 6.02876 17.6306 6.00158 17.4999 6H7.49994C7.23472 6 6.98037 6.10536 6.79283 6.29289C6.6053 6.48043 6.49994 6.73478 6.49994 7C6.49994 7.26522 6.6053 7.51957 6.79283 7.70711C6.98037 7.89464 7.23472 8 7.49994 8H15.0899L6.78994 16.29C6.69621 16.383 6.62182 16.4936 6.57105 16.6154C6.52028 16.7373 6.49414 16.868 6.49414 17C6.49414 17.132 6.52028 17.2627 6.57105 17.3846C6.62182 17.5064 6.69621 17.617 6.78994 17.71C6.8829 17.8037 6.9935 17.8781 7.11536 17.9289C7.23722 17.9797 7.36793 18.0058 7.49994 18.0058C7.63195 18.0058 7.76266 17.9797 7.88452 17.9289C8.00638 17.8781 8.11698 17.8037 8.20994 17.71L16.4999 9.41V17C16.4999 17.2652 16.6053 17.5196 16.7928 17.7071C16.9804 17.8946 17.2347 18 17.4999 18C17.7652 18 18.0195 17.8946 18.207 17.7071C18.3946 17.5196 18.4999 17.2652 18.4999 17V7C18.4984 6.86932 18.4712 6.74022 18.4199 6.62Z" fill="currentColor"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4">
+              <div id="resultContainer" class="block w-full"></div>
+          </div>
+          
+          </div>
+        </div>
+    </section>
+
+    <script>
+        async function generateImage() {
+            const textInput = document.getElementById('textInput').value;
+            const apiKey = 'f8c09fcf819d5040689050e533089590f004b3de03b34b09e9b6a68699aa850c3d94e3c715cdef8bae31f52686034832'; // Replace with your actual API key
+
+            const formData = new FormData();
+            formData.append('prompt', textInput);
+
+            try {
+                const response = await fetch('https://clipdrop-api.co/text-to-image/v1', {
+                    method: 'POST',
+                    headers: {
+                        'x-api-key': apiKey,
+                    },
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const imageUrl = URL.createObjectURL(await response.blob());
+
+                const resultContainer = document.getElementById('resultContainer');
+                resultContainer.innerHTML = `<img src="${imageUrl}" alt="Generated Image">`;
+
+                const remainingCredits = response.headers.get('x-remaining-credits');
+                console.log(`Remaining Credits: ${remainingCredits}`);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+
+    </div>
+</body>
+</html>
+
